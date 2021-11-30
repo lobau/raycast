@@ -1,6 +1,6 @@
 # HTML5 Raycast
 
-![](raycast3d.jpg)
+![](README.png)
 
 A Wolfenstein 3D style JavaScript Raycaster using the browser's HTML5 Canvas for rendering.
 

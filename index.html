@@ -1,0 +1,39 @@
+<!--
+JavaScript Canvas Wolfenstein 3D Raycaster
+Author: Andrew Lim
+https://github.com/andrew-lim/html5-raycast
+
+Adapted from this article by Jacob Seidelin
+http://dev.opera.com/articles/view/creating-pseudo-3d-games-with-html-5-can-1/
+
+Main differences from the original:
+- Use <canvas> elements to render the game. In the original article <div> and <img> strips
+  were used to render the walls, floor and ceiings.
+- Player rotation is now stored as unit circle radians. In other words, turning left counterclockwise
+  is a positive angle.
+- Wall size is now 128 game units. The player's position in a tile is no longer a floating point
+  value between 0 to 1, but an integer between 0 to 128.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JavaScript Raycasting Engine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <img id="wallsimg" src="img/walls.png" style="display: none">
+  <img id="floorimg" src="img/floor.png" style="display: none" />
+  <img id="ceilingimg" src="img/ceil.png" style="display: none" />
+    <canvas id="mainCanvas"></canvas>
+    <div id="minimapcontainer">
+      <canvas id="minimap"></canvas>
+      <canvas id="minimapobjects"></canvas>
+    </div>  
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

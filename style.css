@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(25, 65, 65);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    color: white;
+    display: grid;
+    align-items: center;
+}
+
+#minimapcontainer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#minimap {
+    position: absolute;
+}
+
+#minimapobjects {
+    position: absolute;
+}
+
+#mainCanvas {
+    /* width: 100vw; */
+    height: 100vh;
+    aspect-ratio: 5 / 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: none;
+    
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
